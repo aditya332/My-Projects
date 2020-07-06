@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/myCartFragment"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="My Cart" />
+        <item
+            android:id="@+id/myOrdersFragment"
+            android:icon="@drawable/ic_shopping_basket_black_24dp"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/myWishlistFragment"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="My Wishlist" />
+        <item
+            android:id="@+id/myAccountFragment"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="My Account" />
+    </group>
+</menu>

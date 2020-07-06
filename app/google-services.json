@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "438274268883",
+    "firebase_url": "https://lokal-users.firebaseio.com",
+    "project_id": "lokal-users",
+    "storage_bucket": "lokal-users.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438274268883:android:ea16a41200a1404efdbe26",
+        "android_client_info": {
+          "package_name": "com.somanibrothersservices.lokalmall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438274268883-3qqrkesicimh852vbk95hul2m679m8sb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.somanibrothersservices.lokalmall",
+            "certificate_hash": "6b26da35c5ea954dca4310724cadab325cdc788f"
+          }
+        },
+        {
+          "client_id": "438274268883-ebpdc4vt6o8daqpd2a6ltonu6871t20i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpn2NxlZ7nEmqt421jawQ9BJDRm-q5g3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438274268883-ebpdc4vt6o8daqpd2a6ltonu6871t20i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

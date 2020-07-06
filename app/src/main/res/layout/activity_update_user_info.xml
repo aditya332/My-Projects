@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateUserInfoActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_update_info_fragment"
+        android:layout_width="130sp"
+        android:layout_height="130sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="2sp"
+        android:src="@drawable/ic_person_outline_black_24dp"
+        app:civ_border_color="@android:color/black"
+        app:civ_border_width="2sp"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/change_photo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginTop="8sp"
+        android:background="@android:color/transparent"
+        android:stateListAnimator="@null"
+        android:text="Change Photo"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/profile_image_update_info_fragment"
+        app:layout_constraintStart_toStartOf="@+id/profile_image_update_info_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image_update_info_fragment" />
+
+    <Button
+        android:id="@+id/remove_photo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginTop="8sp"
+        android:background="@android:color/transparent"
+        android:stateListAnimator="@null"
+        android:text="Remove"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="@+id/profile_image_update_info_fragment"
+        app:layout_constraintStart_toStartOf="@+id/profile_image_update_info_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/change_photo_button" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/update_info_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image_update_info_fragment" />
+
+    <EditText
+        android:id="@+id/mobileNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Mobile Number"
+        android:backgroundTint="@color/colorPrimary"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <Button
+        android:id="@+id/update_info_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="Update"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

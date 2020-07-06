@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseStoreActivity"
+    android:id="@+id/chooseStoreActivity">
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="64dp"
+        android:onClick="onClickAboutStore"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/rasika_store_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.varunest.sparkbutton.SparkButton
+        android:id="@+id/rasika_store_button"
+        android:layout_width="317dp"
+        android:layout_height="240sp"
+        android:layout_marginTop="90sp"
+        app:sparkbutton_activeImage="@android:color/transparent"
+        app:sparkbutton_inActiveImage="@android:color/transparent"
+        app:sparkbutton_iconSize="40dp"
+        app:sparkbutton_primaryColor="@android:color/transparent"
+        app:sparkbutton_secondaryColor="@android:color/transparent"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.varunest.sparkbutton.SparkButton
+        android:id="@+id/somani_store_button"
+        android:layout_width="317dp"
+        android:layout_height="260sp"
+        android:layout_marginTop="12sp"
+        app:sparkbutton_activeImage="@android:color/transparent"
+        app:sparkbutton_inActiveImage="@android:color/transparent"
+        app:sparkbutton_iconSize="40dp"
+        app:sparkbutton_primaryColor="@android:color/transparent"
+        app:sparkbutton_secondaryColor="@android:color/transparent"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rasika_store_button" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32sp"
+        android:fontFamily="@font/aladin"
+        android:text="↑Choose a Shop↑"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textColor="#FF6D00"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/slider_background"
+        android:backgroundTint="@android:color/white"
+        android:text="Change\nCity"
+        android:textAllCaps="false"
+        android:onClick="onClickChangeCity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
